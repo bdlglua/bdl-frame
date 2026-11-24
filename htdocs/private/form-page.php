@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <meta name="theme-color" content="#f8f7f4">
+  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <meta name="theme-color" content="#111015">
   <title><?= html($title) ?> — BDL Frame</title>
   <link rel="icon" type="image/png" href="/assets/forme.png">
   <script src="/theme.js"></script>\n  <link rel="stylesheet" href="/styles.css">
@@ -14,7 +14,7 @@
       <a class="wordmark" href="/" aria-label="BDL Frame, accueil"><span class="star" aria-hidden="true">✳</span> BDL<span class="brand-studio">Frame</span></a>
       <nav class="site-nav" aria-label="Navigation principale"><a href="/#templates">Templates</a><a href="/#services">Services</a></nav>
       <div class="header-tools">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Activer le thème sombre" aria-pressed="false"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-toggle-label">Thème sombre</span></button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Activer le thème clair" aria-pressed="true"><span class="theme-toggle-icon" aria-hidden="true">☀</span><span class="theme-toggle-label">Thème clair</span></button>
         <a class="button button-outline header-action" href="/">Retour au site</a>
       </div>
     </div>
