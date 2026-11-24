@@ -2,8 +2,8 @@
 
 (() => {
   const root = document.documentElement;
-  const storageKey = "bdl-frame-theme";
-  const media = window.matchMedia("(prefers-color-scheme: dark)");
+  // Nouvelle clé : les anciennes préférences enregistrées ne forcent plus le thème clair.
+  const storageKey = "bdl-frame-theme-v2";
 
   function readPreference() {
     try {
@@ -30,8 +30,8 @@
     });
   }
 
-  const saved = readPreference();
-  applyTheme(saved || "dark");
+  // Le thème sombre est le défaut pour tout nouveau visiteur.
+  applyTheme(readPreference() || "dark");
 
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
@@ -41,9 +41,5 @@
         applyTheme(next);
       });
     });
-  });
-
-  media.addEventListener?.("change", (event) => {
-    if (!readPreference()) applyTheme(event.matches ? "dark" : "light");
   });
 })();
