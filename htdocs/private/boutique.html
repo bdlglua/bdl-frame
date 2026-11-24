@@ -13,7 +13,7 @@
   <meta property="og:image" content="https://bdl-frame.fr/assets/studio.webp">
   <link rel="icon" type="image/png" href="/assets/forme.png">
   <link rel="preload" href="/assets/manrope.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/styles.css">
+  <script src="/theme.js"></script>\n  <link rel="stylesheet" href="/styles.css">
   <script src="/boutique.js" defer></script>
   <script src="/app.js" defer></script>
 </head>
@@ -29,7 +29,10 @@
         <a href="#services">Services</a>
         <a href="/suivi/">Suivre ma demande</a>
       </nav>
-      <a class="button button-dark header-action" href="#contact">Parlons projet</a>
+      <div class="header-tools">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Activer le thème sombre" aria-pressed="false"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-toggle-label">Thème sombre</span></button>
+        <a class="button button-dark header-action" href="#contact">Parlons projet</a>
+      </div>
     </div>
   </header>
 
