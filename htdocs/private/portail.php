@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#f8f7f4">
   <title>Suivi des demandes — BDL Frame</title>
   <link rel="icon" type="image/png" href="/assets/forme.png">
-  <link rel="stylesheet" href="/styles.css">
+  <script src="/theme.js"></script>\n  <link rel="stylesheet" href="/styles.css">
   <script src="/portail.js" defer></script>
 </head>
 <body>
@@ -17,7 +17,10 @@
     <div class="shell header-layout">
       <a class="wordmark" href="/" aria-label="BDL Frame, accueil"><span class="star" aria-hidden="true">✳</span> BDL<span class="brand-studio">Frame</span></a>
       <nav class="site-nav" aria-label="Navigation principale"><a href="/#templates">Templates</a><a href="/#services">Services</a></nav>
-      <a class="button button-outline header-action" href="/">Retour au site</a>
+      <div class="header-tools">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Activer le thème sombre" aria-pressed="false"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-toggle-label">Thème sombre</span></button>
+        <a class="button button-outline header-action" href="/">Retour au site</a>
+      </div>
     </div>
   </header>
 
