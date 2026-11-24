@@ -18,7 +18,7 @@
     root.dataset.theme = theme;
     const dark = theme === "dark";
     const meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", dark ? "#15131a" : "#f8f7f4");
+    if (meta) meta.setAttribute("content", dark ? "#111015" : "#f8f7f4");
 
     document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
       button.setAttribute("aria-pressed", String(dark));
@@ -31,7 +31,7 @@
   }
 
   const saved = readPreference();
-  applyTheme(saved || (media.matches ? "dark" : "light"));
+  applyTheme(saved || "dark");
 
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
