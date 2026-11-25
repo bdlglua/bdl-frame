@@ -8,6 +8,9 @@ require __DIR__ . '/private/demandes.php';
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: private, no-store');
 header('X-Content-Type-Options: nosniff');
+header('X-Frame-Options: DENY');
+header('Referrer-Policy: no-referrer');
+header("Content-Security-Policy: default-src 'none'; base-uri 'none'; frame-ancestors 'none'");
 
 $route = $_GET['route'] ?? '';
 if (!is_string($route)) {
