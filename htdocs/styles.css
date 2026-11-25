@@ -440,62 +440,6 @@ body:has(.dialog[open]) { overflow: hidden; }
 
 
 /* Thème sombre BDL Frame */
-:root[data-theme="dark"] {
-  color-scheme: dark;
-  --paper: #15131a;
-  --white: #211e28;
-  --ink: #f4f0f8;
-  --muted: #b9b1c3;
-  --purple: #c4a8ff;
-  --lilac: #d7c5ff;
-  --border: #403949;
-}
-:root[data-theme="dark"] .site-header,
-:root[data-theme="dark"] .site-footer { border-color: var(--border); }
-:root[data-theme="dark"] .button-dark { background: #eee5ff; color: #21172e; }
-:root[data-theme="dark"] .button-dark:hover { background: #d6c3ff; }
-:root[data-theme="dark"] .button-outline { color: var(--ink); border-color: #62586f; }
-:root[data-theme="dark"] .button-outline:hover { background: #342b42; border-color: #9e83d0; }
-:root[data-theme="dark"] .button-lilac { background: #cbb4ff; color: #21172e; }
-:root[data-theme="dark"] .button-lilac:hover { background: #ddceff; }
-:root[data-theme="dark"] .catalog { background: #1b1821; border-color: var(--border); }
-:root[data-theme="dark"] .filter { background: #211e28; border-color: #484052; color: #c5bdcf; }
-:root[data-theme="dark"] .filter[aria-pressed="true"] { background: #eee5ff; border-color: #eee5ff; color: #21172e; }
-:root[data-theme="dark"] .product-card,
-:root[data-theme="dark"] .portal-card,
-:root[data-theme="dark"] .dialog { background: var(--white); border-color: var(--border); color: var(--ink); }
-:root[data-theme="dark"] .service-card { background: #211e28; border-color: var(--border); }
-:root[data-theme="dark"] .service-icon { background: #3a2e50; color: #d7c5ff; }
-:root[data-theme="dark"] .icon-stack::after { background: #3a2e50; }
-:root[data-theme="dark"] .contact-panel { background: #292333; }
-:root[data-theme="dark"] .project-form :is(input, select, textarea) {
-  background-color: #1d1925; border-color: #655a72; color: #f8f3ff;
-}
-:root[data-theme="dark"] .project-form ::placeholder { color: #b9aec7; }
-:root[data-theme="dark"] .close { background: #302a39; color: var(--ink); border-color: #51475d; }
-:root[data-theme="dark"] .close:hover { background: #40344f; }
-:root[data-theme="dark"] .portal-access input,
-:root[data-theme="dark"] .thread-reply textarea,
-:root[data-theme="dark"] .thread-status-form select,
-:root[data-theme="dark"] .confirmation-link,
-:root[data-theme="dark"] .admin-form input {
-  background-color: #18151e; color: var(--ink); border-color: #5b5266;
-}
-:root[data-theme="dark"] .inbox-entry { background: #211e28; color: var(--ink); border-color: var(--border); }
-:root[data-theme="dark"] .inbox-entry[aria-current="true"],
-:root[data-theme="dark"] .inbox-entry:hover { background: #332941; border-color: #8d70c4; }
-:root[data-theme="dark"] .ticket-status { background: #3b2d51; color: #e2d3ff; }
-:root[data-theme="dark"] .ticket-status[data-status="en-cours"] { background: #514126; color: #ffe2a2; }
-:root[data-theme="dark"] .ticket-status[data-status="devis-propose"] { background: #294432; color: #c4f0ca; }
-:root[data-theme="dark"] .ticket-status[data-status="cloturee"] { background: #393640; color: #d6d0dc; }
-:root[data-theme="dark"] .message { background: #302b37; }
-:root[data-theme="dark"] .from-studio { background: #3a2e4d; }
-:root[data-theme="dark"] .admin-alert { background: #4a292e; color: #ffd9dd; }
-:root[data-theme="dark"] .text-link { color: #c9b0ff; }
-:root[data-theme="dark"] .text-link:hover { color: #e0d2ff; }
-:root[data-theme="dark"] .skip { background: #211e28; color: var(--ink); }
-:root[data-theme="dark"] .dialog::backdrop { background: #08060dbd; }
-
 .header-tools { display: flex; justify-self: end; align-items: center; gap: 0.55rem; }
 .theme-toggle {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem;
