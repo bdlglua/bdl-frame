@@ -1,0 +1,6 @@
+# Local secrets and deployment configuration
+/htdocs/private/config.local.php
+/htdocs/private/config.php
+.env
+.env.*
+*.log
