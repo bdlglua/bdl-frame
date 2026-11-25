@@ -8,7 +8,8 @@
   <meta name="theme-color" content="#111015">
   <title>Suivi des demandes — BDL Frame</title>
   <link rel="icon" type="image/png" href="/assets/forme.png">
-  <script src="/theme.js"></script>\n  <link rel="stylesheet" href="/styles.css">
+  <script src="/theme.js?v=20261125-theme-fix" defer></script>
+  <link rel="stylesheet" href="/styles.css?v=20261125-theme-fix">
   <script src="/portail.js" defer></script>
 </head>
 <body>
