@@ -3,10 +3,12 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">\n  <meta name="theme-color" content="#111015">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111015">
   <title><?= html($title) ?> — BDL Frame</title>
   <link rel="icon" type="image/png" href="/assets/forme.png">
-  <script src="/theme.js"></script>\n  <link rel="stylesheet" href="/styles.css">
+  <script src="/theme.js?v=20261125-theme-fix" defer></script>
+  <link rel="stylesheet" href="/styles.css?v=20261125-theme-fix">
 </head>
 <body>
   <header class="site-header">

@@ -6,7 +6,7 @@ if (!defined('BDL_FRAME')) {
     exit;
 }
 
-const CONFIG_PATH = __DIR__ . '/config.php';
+const CONFIG_PATH = __DIR__ . '/config.local.php';
 const SESSION_COOKIE = '__Host-BDLFrame';
 const STUDIO_SESSION_SECONDS = 28800;
 
